@@ -5,13 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Events</title>
 
-        <!-- link font awesome -->
-
         <!-- Font Awesome 6 -->
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
         />
+        <!-- link font awesome -->
 
         <link
             rel="stylesheet"
@@ -35,11 +34,9 @@
     </head>
     <body>
         <div class="wrapper">
-            <!-- Start header -->
-
-            <div class="wrapper-header">
+            <div class="header-wrapper">
                 <div class="inner">
-                    <div class="container">
+                    <div class="container" id="container">
                         <div class="header">
                             <a href="/">
                                 <img
@@ -49,37 +46,116 @@
                                 />
                             </a>
                             <ul class="nav">
-                                <li><a href="" class="item-nav">Home</a></li>
-                                <li><a href="" class="item-nav">COURSES</a></li>
-                                <li><a href="" class="item-nav">EVENTS</a></li>
-                                <li><a href="" class="item-nav">Pages</a></li>
+                                <li>
+                                    <a href="" class="item-nav">Home</a>
+                                    <ul class="subnav">
+                                        <li>
+                                            <a href="#">Home version one</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Home version Two</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                >Home video background</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="" class="item-nav">COURSES</a>
+                                    <ul class="subnav">
+                                        <li><a href="">Course 2 Column</a></li>
+                                        <li><a href="">Course 3 Column</a></li>
+                                        <li><a href="">Course 4 Column</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="" class="item-nav">EVENTS</a>
+                                    <ul class="subnav">
+                                        <li><a href="">Event List</a></li>
+                                        <li><a href="">Event Grid</a></li>
+                                        <li><a href="">Event Single</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="" class="item-nav">Pages</a>
+                                    <ul class="subnav">
+                                        <li><a href="">Our teachers</a></li>
+                                        <li><a href="">teachers profile</a></li>
+                                        <li><a href="">About Us</a></li>
+                                        <li><a href="">Error page</a></li>
+                                        <li><a href="">FAQ Page</a></li>
+                                        <li><a href="">Login</a></li>
+                                        <li><a href="">Sign up</a></li>
+                                    </ul>
+                                </li>
                                 <li>
                                     <a href="" class="item-nav">PORTFOLIO</a>
+                                    <ul class="subnav">
+                                        <li>
+                                            <a href="">portfolio 2 column</a>
+                                        </li>
+                                        <li>
+                                            <a href="">portfolio 3 column</a>
+                                        </li>
+                                        <li>
+                                            <a href="">portfolio 4 column</a>
+                                        </li>
+                                    </ul>
                                 </li>
-                                <li><a href="" class="item-nav">BLOG</a></li>
-                                <li><a href="" class="item-nav">SHOP</a></li>
-                                <li><a href="" class="item-nav">CONTACT</a></li>
+                                <li>
+                                    <a href="" class="item-nav">BLOG</a>
+                                    <ul class="subnav">
+                                        <li><a href="">Blog</a></li>
+                                        <li><a href="">Blog details</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="" class="item-nav">SHOP</a>
+                                    <ul class="subnav">
+                                        <li><a href="">Shop Page</a></li>
+                                        <li><a href="">Shop Details</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="" class="item-nav">CONTACT</a>
+                                </li>
                             </ul>
                             <div class="icon">
-                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <div class="box-icon-search">
+                                    <i
+                                        class="fa-solid fa-magnifying-glass icon-search"
+                                    ></i>
+                                    <div class="sub-search">
+                                        <input
+                                            type="search"
+                                            placeholder="Search ..."
+                                        />
+                                        <button class="btn-search">
+                                            <i
+                                                class="fa-solid fa-magnifying-glass"
+                                            ></i>
+                                        </button>
+                                    </div>
+                                </div>
+
                                 <i class="fa-solid fa-cart-shopping"></i>
                             </div>
                         </div>
                     </div>
 
                     <div class="header-content">
-                        <div class="wrapper-content-header">
+                        <div class="wrapper-content-header" id="top">
                             <h1 class="heading">COURSES</h1>
                             <div class="breadcrumb">
                                 <a href="">Home</a>
-                                <a href="">Events</a>
+                                <a href="">Course</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!-- End header -->
 
             <!-- Start content -->
             <div class="wrapper-content">
@@ -101,11 +177,13 @@
                                     </span>
                                 </div>
                             </div>
-                            <img
-                                src="./images/img-content-1.jpg"
-                                alt="content-1"
-                                class="image"
-                            />
+                            <div class="box-img">
+                                <img
+                                    src="./images/img-content-1.jpg"
+                                    alt="content-1"
+                                    class="image"
+                                />
+                            </div>
                             <div class="sub-info">
                                 <p class="paragraph">
                                     "We believe that the company has turned a
@@ -136,11 +214,13 @@
                                     </span>
                                 </div>
                             </div>
-                            <img
-                                src="./images/img-content-2.jpg"
-                                alt="event-2"
-                                class="image"
-                            />
+                            <div class="box-img">
+                                <img
+                                    src="./images/img-content-2.jpg"
+                                    alt="event-2"
+                                    class="image"
+                                />
+                            </div>
                             <div class="sub-info">
                                 <p class="paragraph">
                                     "We believe that the company has turned a
@@ -171,11 +251,13 @@
                                     </span>
                                 </div>
                             </div>
-                            <img
-                                src="./images/img-content-3.jpg"
-                                alt="content-3"
-                                class="image"
-                            />
+                            <div class="box-img">
+                                <img
+                                    src="./images/img-content-3.jpg"
+                                    alt="content-3"
+                                    class="image"
+                                />
+                            </div>
                             <div class="sub-info">
                                 <p class="paragraph">
                                     "We believe that the company has turned a
@@ -297,15 +379,18 @@
                 <!-- End pagination -->
             </div>
             <!-- End content -->
+
             <!-- Start footer -->
             <div class="wrapper-footer">
                 <div class="footer">
                     <div class="footer-logo">
-                        <img
-                            src="./images/img-logo.png"
-                            alt="Logo"
-                            class="logo"
-                        />
+                        <a href="#">
+                            <img
+                                src="./images/img-logo.png"
+                                alt="Logo"
+                                class="logo"
+                            />
+                        </a>
                         <span>
                             Scholars provides universal access to the world’s
                             best education, partnering with top universities and
@@ -379,5 +464,10 @@
             </div>
             <!-- End footer -->
         </div>
+        <button class="scroll-top">
+            <a href="#top">
+                <i class="fa-solid fa-arrow-up"></i>
+            </a>
+        </button>
     </body>
 </html>
